@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./assets/scss/layout/_header.scss">
+
+    <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="./assets/venobox/css/venobox.min.css">
+	
+<body>
+    
+    <div class="preloader position-fixed w-100 h-100 bg-dark">
+		<div class="preloader-wrapper d-flex align-items-center justify-content-center w-100 h-100">
+			<div class="preloader__card d-flex align-items-center justify-content-center">
+				<img src="./images/honik.png" alt="preloader image" class="preloader__card__image w-100">
+			</div>
+		</div>
+	</div>
+
+
+        <header class="header  w-100 bg-dark">
+
+            <nav class="navbar navbar-expand-md p-0 bg-dark">
+                <div class="container-fluid">
+                    <a class="navbar-brand d-inline-flex align-items-center" href="./">
+                        <span class="navbar-brand__logo d-inline-block position-relative"></span>
+                        <span class="navbar-brand__text">HonikInvestments</span>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <svg class="navbar-toggler__icon" version="1.1" fill="currentColor" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 384.97 384.97" style="enable-background: new 0 0 384.97 384.97" xml:space="preserve">
+                            <path d="M12.03,120.303h360.909c6.641,0,12.03-5.39,12.03-12.03c0-6.641-5.39-12.03-12.03-12.03H12.03    c-6.641,0-12.03,5.39-12.03,12.03C0,114.913,5.39,120.303,12.03,120.303z"></path>
+                            <path d="M372.939,180.455H12.03c-6.641,0-12.03,5.39-12.03,12.03s5.39,12.03,12.03,12.03h360.909c6.641,0,12.03-5.39,12.03-12.03    S379.58,180.455,372.939,180.455z"></path>
+                            <path d="M372.939,264.667H132.333c-6.641,0-12.03,5.39-12.03,12.03c0,6.641,5.39,12.03,12.03,12.03h240.606    c6.641,0,12.03-5.39,12.03-12.03C384.97,270.056,379.58,264.667,372.939,264.667z"></path>
+                        </svg>
+                    </button>
+                
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav align-items-center text-center ml-auto">
+                            <li class="nav-item">
+                                <a class="nav-link d-inline-flex align-items-center" href="./">
+                                    <span class="nav-link__image d-inline-block">
+                                        
+                                    </span>
+                                    <span class="nav-link__text">Home</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link d-inline-flex align-items-center" href="./about.html">
+                                    <span class="nav-link__text">About</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link d-inline-flex align-items-center" href="./history.html">
+                                    <span class="nav-link__text">Invest</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link d-inline-flex align-items-center" href="./buy.html">
+                                    <span class="nav-link__text">Story</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link d-inline-flex align-items-center" href="./pre-sale.html">
+                                    <span class="nav-link__text">Contact</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <button type="button" class="primary-btn" data-toggle="modal" data-target="#createAccountModal">Login</button>
+                                <button type="button" class="primary-btn" data-toggle="modal" data-target="#createAccountModal">SignUp</button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav> 
+
+        </header>
+
+
+        <!-- Off Canvas Menu Toggler -->
+	<div class="offCanvasMenuCloser position-fixed" data-toggle="collapse" data-target="#navbarSupportedContent" role="button" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"></div>
+
+	<!-- Modal -->
+	<div class="modal fade" id="createAccountModal" tabindex="-1" aria-labelledby="createAccountModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+			<div class="modal-content border-0">
+				<div class="modal-header position-relative justify-content-center border-0">
+					<h5 class="modal-title position-absolute" id="createAccountModalLabel">Create Account</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<p class="modal-body__text text-center">Your email address is only used to send you important updates. Your nickname is how other CryptoKitties players will identify you.</p>
+					<form action="#!" class="modal__form">
+						<div class="form-group">
+							<input type="email" name="email" class="form-control shadow-none" placeholder="Your email address" required>
+						</div>
+						<div class="form-group">
+							<input type="text" name="name" class="form-control shadow-none" placeholder="Nickname (optional)">
+						</div>
+						<div class="form-group text-center">
+							<button type="submit" class="primary-btn primary-btn--lg">Continue</button>
+						</div>
+					</form>
+					<p class="modal-body__text text-center">By signing up, you agree to our <a href="#!" class="modal-body__text__link">Terms of Service</a> and <a href="#!" class="modal-body__text__link">Privacy Policy</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+    <!-- Banner Section -->
+	
+		<div class="container">
+			<div class="banner-container">
+
+			</div>
+		</div>
+
+
+
+
+
+
+
+    <script src="./assets/js/jquery-1.12.4.min.js"></script>
+	<script src="./assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+	<script src="./assets/plugins/venobox/js/venobox.min.js"></script>
+	<script src="./assets/js/script.js"></script>
+	<script>
+		/* Document on load functions */
+		$(window).on('load', function () {
+			$(".banner__animation__video").get(0).play();
+			$(".learn__card__animation__video").get(0).play();
+		});
+	</script>
+</body>
+</html>

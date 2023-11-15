@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../../../cryptokitties"
+		},
+		{
+			"path": ".."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "clone"
+	}
+}
